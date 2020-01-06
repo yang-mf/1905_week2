@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/encrypt','crypt\CryptController@pay');
-Route::get('/decrypt','crypt\CryptController@pay');
+
+Route::get('/a', function () {
+    echo 22;
+});
+
+Route::get('/encrypt','crypt\CryptController@encrypt');
+Route::get('/decrypt','crypt\CryptController@decrypt');
 
